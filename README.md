@@ -31,7 +31,7 @@ exact des creds Nexus utilisés en CocoaPods.
 Ou dans un `Package.swift` consommateur :
 
 ```swift
-.package(url: "https://github.com/shareid/shareid-sdk-ios-spm.git", from: "2.7.13")
+.package(url: "https://github.com/ShareID-ai/shareid-sdk-ios-spm.git", from: "2.7.13")
 ```
 
 Puis ajouter le produit `ShareID` à la cible.
