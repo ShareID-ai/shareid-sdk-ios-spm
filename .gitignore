@@ -3,3 +3,7 @@
 .swiftpm/
 *.xcodeproj
 xcuserdata/
+
+# Lockfile non pertinent pour une librairie distribuée :
+# SwiftPM ignore ce fichier quand le package est consommé comme dépendance.
+Package.resolved
