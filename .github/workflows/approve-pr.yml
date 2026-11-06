@@ -1,0 +1,21 @@
+#approve-pr.yml
+
+name: PR approval
+
+# Doc : https://github.com/ShareID-ai/ci-workflows/blob/main/docs/approve-pr.md
+# Config (approvers, standard changes, auto-merge) : ci-workflows/clients/<repo>.yml, action-approve-pr.
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited, ready_for_review, closed]
+    branches: [main, master]
+  pull_request_review:
+    types: [submitted, dismissed]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  pr:
+    uses: ShareID-ai/ci-workflows/.github/workflows/reusable-approve-pr.yml@stable
+    secrets: inherit
