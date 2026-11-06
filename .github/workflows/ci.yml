@@ -1,0 +1,18 @@
+# ci reference
+
+name: CI
+
+on:
+  push:
+    branches: [feat/*, chore/*, fix/*, ci/*, main]
+    tags: ["build-*"]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: "0 10 * * 1-5"
+
+jobs:
+  ci:
+    uses: ShareID-ai/ci-workflows/.github/workflows/reusable-ci.yml@stable
+    secrets: inherit
