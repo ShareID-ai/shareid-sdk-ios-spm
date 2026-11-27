@@ -15,8 +15,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "shareid_sdk_ios",
-            url: "https://repository.shareid.net/repository/raw-hosted/bind2/iOS/2.8.3/shareid_sdk_ios.zip",
-            checksum: "65df0046f8f9d30f0d7d7e5abd2a18ce44b25a433e7dd8d38bcdb7bf2995d0b2"
+            url: "https://repository.shareid.net/repository/raw-hosted/bind2/iOS/2.8.4/shareid_sdk_ios.zip",
+            checksum: "700bf1f85c6365a9222eb56a4098615eea6323ce08dd65140ee74792189d78c7"
         ),
         .target(
             name: "ShareID",
